@@ -58,6 +58,11 @@ public class GameActivity extends AppCompatActivity {
                         //idsAndRules = cardRandomizer.cardAndRule(cardList, ruleList);
                         imgView.setImageResource(id);
                         RuleTextView.setText("");
+                        for(int i = 0; i< cardList.size(); i++){
+                            String name = getResources().getResourceEntryName(cardList.get(i));
+                            Log.e("name", "" + name);
+                        }
+
                     }
                     //else pick a random card, display it on the image view and remove it from the array
                     else {
@@ -67,7 +72,7 @@ public class GameActivity extends AppCompatActivity {
                         String name = getResources().getResourceEntryName(id);
                         Log.e("name", "" + name);
                         //Log.e("Array", "" + cardList);
-                        Log.e("rule : ", "rule : "+rule);
+                        Log.e("rule : ", "rule : " + rule);
                         cardList.remove(r);
                         ruleList.remove(r);
                         Counter.setText("Cartes restantes : " + Integer.toString(cardList.size()));

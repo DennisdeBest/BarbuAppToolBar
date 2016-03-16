@@ -35,6 +35,7 @@
         android:id="@+id/button_rules"
         android:layout_below="@+id/button_settings"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp" />
+        android:layout_marginTop="70dp"
+        android:onClick="openRules"/>
 
 </RelativeLayout>

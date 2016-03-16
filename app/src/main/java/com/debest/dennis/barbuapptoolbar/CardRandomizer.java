@@ -28,12 +28,14 @@ public class CardRandomizer {
                 resourceId = fields[i].getInt(drawableResources);
                 String name = context.getResources().getResourceEntryName(resourceId);
                 //Use regex to filter out system ressources
-                if (name.matches("(clubs|joker|spades|diamonds|hearts).*"))
+                if (name.matches("(club|diamond|hearts|spades|x_joker).*"))
                     res.add(resourceId);
             } catch (Exception e) {
                 continue;
             }
         }
+
+
         //return the resulting array
         return res;
     }
@@ -41,7 +43,7 @@ public class CardRandomizer {
     public ArrayList<String> getRules(Context context){
         ArrayList<String> rulesArray = new ArrayList<>();
         //Clubs
-        rulesArray.add("Tu bois 10"); //10
+        rulesArray.add("cul sec"); //Ace
         rulesArray.add("Tu bois 2"); // 2
         rulesArray.add("Tu bois 3"); // 3
         rulesArray.add("Tu bois 4"); // 4
@@ -50,42 +52,13 @@ public class CardRandomizer {
         rulesArray.add("Tu bois 7"); // 7
         rulesArray.add("Tu bois 8"); // 8
         rulesArray.add("Tu bois 9"); //9
-        rulesArray.add("Cul sec"); //ace
+        rulesArray.add("Tu bois 10"); //10
         rulesArray.add("Dans Ma valise"); //jack
-        rulesArray.add("Je n'ai jamais"); //king
         rulesArray.add("Invente une règles"); // queen
+        rulesArray.add("Je n'ai jamais"); //king
+
         //Diamonds
-        rulesArray.add("Tu distribu 10"); //10
-        rulesArray.add("Tu distribu 2"); // 2
-        rulesArray.add("Tu distribu 3"); // 3
-        rulesArray.add("Tu distribu 4"); // 4
-        rulesArray.add("Tu distribu 5"); // 5
-        rulesArray.add("Tu distribu 6"); // 6
-        rulesArray.add("Tu distribu 7"); // 7
-        rulesArray.add("Tu distribu 8"); // 8
-        rulesArray.add("Tu distribu 9"); //9
-        rulesArray.add("Cul sec"); //ace
-        rulesArray.add("Dans Ma valise"); //jack
-        rulesArray.add("Je n'ai jamais"); //king
-        rulesArray.add("Invente une règles"); // queen
-        //Hearts
-        rulesArray.add("Tu distribu 10"); //10
-        rulesArray.add("Tu distribu 2"); // 2
-        rulesArray.add("Tu distribu 3"); // 3
-        rulesArray.add("Tu distribu 4"); // 4
-        rulesArray.add("Tu distribu 5"); // 5
-        rulesArray.add("Tu distribu 6"); // 6
-        rulesArray.add("Tu distribu 7"); // 7
-        rulesArray.add("Tu distribu 8"); // 8
-        rulesArray.add("Tu distribu 9"); //9
-        rulesArray.add("Cul sec"); //ace
-        rulesArray.add("Dans Ma valise"); //jack
-        rulesArray.add("Je n'ai jamais"); //king
-        rulesArray.add("Invente une règles"); // queen
-        //joker
-        rulesArray.add("joker");
-        //Spades
-        rulesArray.add("Tu bois 10"); //10
+        rulesArray.add("cul sec"); //Ace
         rulesArray.add("Tu bois 2"); // 2
         rulesArray.add("Tu bois 3"); // 3
         rulesArray.add("Tu bois 4"); // 4
@@ -94,10 +67,40 @@ public class CardRandomizer {
         rulesArray.add("Tu bois 7"); // 7
         rulesArray.add("Tu bois 8"); // 8
         rulesArray.add("Tu bois 9"); //9
-        rulesArray.add("Cul sec"); //ace
+        rulesArray.add("Tu bois 10"); //10
         rulesArray.add("Dans Ma valise"); //jack
-        rulesArray.add("Je n'ai jamais"); //king
         rulesArray.add("Invente une règles"); // queen
+        rulesArray.add("Je n'ai jamais"); //king
+        //Hearts
+        rulesArray.add("cul sec"); //Ace
+        rulesArray.add("Tu bois 2"); // 2
+        rulesArray.add("Tu bois 3"); // 3
+        rulesArray.add("Tu bois 4"); // 4
+        rulesArray.add("Tu bois 5"); // 5
+        rulesArray.add("Tu bois 6"); // 6
+        rulesArray.add("Tu bois 7"); // 7
+        rulesArray.add("Tu bois 8"); // 8
+        rulesArray.add("Tu bois 9"); //9
+        rulesArray.add("Tu bois 10"); //10
+        rulesArray.add("Dans Ma valise"); //jack
+        rulesArray.add("Invente une règles"); // queen
+        rulesArray.add("Je n'ai jamais"); //king
+        //Spades
+        rulesArray.add("cul sec"); //Ace
+        rulesArray.add("Tu bois 2"); // 2
+        rulesArray.add("Tu bois 3"); // 3
+        rulesArray.add("Tu bois 4"); // 4
+        rulesArray.add("Tu bois 5"); // 5
+        rulesArray.add("Tu bois 6"); // 6
+        rulesArray.add("Tu bois 7"); // 7
+        rulesArray.add("Tu bois 8"); // 8
+        rulesArray.add("Tu bois 9"); //9
+        rulesArray.add("Tu bois 10"); //10
+        rulesArray.add("Dans Ma valise"); //jack
+        rulesArray.add("Invente une règles"); // queen
+        rulesArray.add("Je n'ai jamais"); //king
+        //Joker
+        rulesArray.add("Joker");
 
     return rulesArray;
     }
