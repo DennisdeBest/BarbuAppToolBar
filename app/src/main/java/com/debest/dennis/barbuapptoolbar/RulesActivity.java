@@ -29,7 +29,7 @@ public class RulesActivity extends AppCompatActivity{
 
         //String[] test = new String[] {"test", "test2", "test3"};
 
-        ListAdapter listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,ruleList);
+        ListAdapter listAdapter = new rule_adapter(this,ruleList, cardList);
 
         ListView listView = (ListView) findViewById(R.id.rule_list_view);
 
