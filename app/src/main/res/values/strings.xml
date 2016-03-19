@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">BarbuAppToolBar</string>
+    <string name="app_name">Le Barbu</string>
     <string name="action_settings">Settings</string>
     <string name="button_rules">Règles</string>
     <string name="button_play">Jouer</string>
     <string name="button_settings">Paramètres</string>
+    <string name="menu_action_back">Menu</string>
+    <string name="action_bar_title_menu">Menu</string>
+    <string name="action_bar_title_game">Jeu</string>
+    <string name="action_bar_title_rules">Règles</string>
 </resources>

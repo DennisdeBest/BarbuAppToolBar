@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.debest.dennis.barbuapptoolbar">
-
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +20,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GameActivity"/>
+            android:name=".GameActivity"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".RulesActivity"/>
+            android:name=".RulesActivity"
+        android:configChanges="orientation"
+            android:parentActivityName=".MainActivity"
+        android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

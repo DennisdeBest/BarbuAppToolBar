@@ -16,7 +16,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Set the toolbar title for the main menu
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(R.string.action_bar_title_menu);
         setSupportActionBar(toolbar);
 
     }
@@ -35,19 +38,18 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
 
+    //start a new game on click
     public void startGame(View view) {
         Intent gameIntent = new Intent(this, GameActivity.class);
+        //Pass the name of this activity to the game activity
+        gameIntent.putExtra("previousActivity", "MainActivity");
         startActivity(gameIntent);
     }
 
+    //open the rules activity on click
     public void openRules(View view) {
         Intent ruleIntent = new Intent(this, RulesActivity.class);
         startActivity(ruleIntent);

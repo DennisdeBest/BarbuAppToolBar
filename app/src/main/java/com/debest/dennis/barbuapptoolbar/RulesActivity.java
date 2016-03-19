@@ -3,6 +3,9 @@ package com.debest.dennis.barbuapptoolbar;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -21,14 +24,19 @@ public class RulesActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rules);
 
-        ArrayList<Integer> cardList = new ArrayList<Integer>();
-        ArrayList<String> ruleList = new ArrayList<String>();
+        //set action bar titles if action bar is set
+        if(getSupportActionBar()!=null)
+            getSupportActionBar().setTitle(R.string.action_bar_title_rules);
 
+        //Create array lists
+        ArrayList<Integer> cardList;
+        ArrayList<String> ruleList;
+
+        //get values for the arraylists
         cardList = cardRandomizer.getIDs(context);
         ruleList = cardRandomizer.getRules(context);
 
-        //String[] test = new String[] {"test", "test2", "test3"};
-
+        //set our personalized adapter
         ListAdapter listAdapter = new rule_adapter(this,ruleList, cardList);
 
         ListView listView = (ListView) findViewById(R.id.rule_list_view);
@@ -36,4 +44,5 @@ public class RulesActivity extends AppCompatActivity{
         listView.setAdapter(listAdapter);
 
     }
+
 }
