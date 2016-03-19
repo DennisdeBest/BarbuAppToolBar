@@ -9,7 +9,8 @@
 <ImageView
     android:layout_height="80dp"
     android:layout_width="50dp"
-    android:id="@+id/row_card_image"/>
+    android:id="@+id/row_card_image"
+    android:layout_marginLeft="20dp"/>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:paddingLeft="10dp"
     android:id="@+id/row_card_rule_text"
