@@ -13,13 +13,13 @@ import java.util.ArrayList;
 /**
  * Created by p8744 on 16/03/2016.
  */
-public class rule_adapter extends ArrayAdapter<String> {
+public class RuleAdapter extends ArrayAdapter<String> {
 
     //set Arraylist
     public ArrayList<Integer> cardIds;
 
     //constructor gets 2 Arraylists one for the rule string and the other for the id int
-    public rule_adapter(Context context, ArrayList<String> rules, ArrayList<Integer> cardIds) {
+    public RuleAdapter(Context context, ArrayList<String> rules, ArrayList<Integer> cardIds) {
         super(context, R.layout.rule_item_layout, rules);
 
         this.cardIds = cardIds;

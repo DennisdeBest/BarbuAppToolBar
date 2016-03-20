@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,6 +27,9 @@ public class GameActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Force app into fullscreen mode
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.game_layout);
 
         //if an action bar is set change it's title
@@ -39,6 +44,7 @@ public class GameActivity extends AppCompatActivity {
         final ImageView imgView = (ImageView) findViewById(R.id.card);
         //find the back of the card image ressource and set it to the image view
         int back_id = getResources().getIdentifier("com.debest.dennis.barbuapptoolbar:drawable/" + "back", null, null);
+        assert imgView != null;
         imgView.setImageResource(back_id);
 
         //set a listenener on the image view
@@ -79,7 +85,7 @@ public class GameActivity extends AppCompatActivity {
                         rule = ruleList.get(r);
                         cardList.remove(r);
                         ruleList.remove(r);
-                        Counter.setText(getString(R.string.cards_left) + Integer.toString(cardList.size()));
+                        Counter.setText(String.format("%s%s", getString(R.string.cards_left), Integer.toString(cardList.size())));
                         RuleTextView.setText(rule);
                     }
 

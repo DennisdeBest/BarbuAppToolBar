@@ -3,10 +3,8 @@ package com.debest.dennis.barbuapptoolbar;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -22,6 +20,9 @@ public class RulesActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Force app into fullscreen mode
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_rules);
 
         //set action bar titles if action bar is set
@@ -37,7 +38,7 @@ public class RulesActivity extends AppCompatActivity{
         ruleList = cardRandomizer.getRules(context);
 
         //set our personalized adapter
-        ListAdapter listAdapter = new rule_adapter(this,ruleList, cardList);
+        ListAdapter listAdapter = new RuleAdapter(this,ruleList, cardList);
 
         ListView listView = (ListView) findViewById(R.id.rule_list_view);
 

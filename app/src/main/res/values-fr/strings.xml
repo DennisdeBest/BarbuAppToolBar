@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Le Barbu</string>
+    <string name="button_rules">Règles</string>
+    <string name="button_play">Jouer</string>
+    <string name="action_bar_title_menu">Menu</string>
+    <string name="action_bar_title_game">Jeu</string>
+    <string name="action_bar_title_rules">Règles</string>
+    <string name="tap_on_card">Appuyez sur la carte</string>
+    <string name="to_start">pour commencer</string>
+    <string name="cards_left">"Cartes restantes : "</string>
+    <string name="new_game">Nouvelle Partie</string>
+    <string name="button_quit">Quitter</string>
+
+    <string name="card_clubs_ace">Bois un cul sec</string>
+    <string name="card_clubs_2">Bois 2 gorgées</string>
+    <string name="cards_clubs_3">Bois 3 gorgées</string>
+    <string name="card_clubs_4">Bois 4 gorgées</string>
+    <string name="cards_clubs_5">Bois 5 gorgées</string>
+    <string name="cards_clubs_6">Bois 6 gorgées</string>
+    <string name="cards_clubs_7">Dans ma valise</string>
+    <string name="cards_clubs_8">J\'ai déja</string>
+    <string name="cards_clubs_9">Invente une règle</string>
+    <string name="cards_clubs_10">Une suite</string>
+    <string name="cards_clubs_jack">Tu est le roi des pouces</string>
+    <string name="cards_clubs_queen">Les dames boivent</string>
+    <string name="cards_clubs_king">Les hommes boivent</string>
+
+    <string name="card_diamonds_ace">Distribues un cul sec</string>
+    <string name="card_diamonds_2">Distribues 2 gorgées</string>
+    <string name="cards_diamonds_3">Distribues 3 gorgées</string>
+    <string name="card_diamonds_4">Distribues 4 gorgées</string>
+    <string name="cards_diamonds_5">Distribues 5 gorgées</string>
+    <string name="cards_diamonds_6">Distribues 6 gorgées</string>
+    <string name="cards_diamonds_7">Dans ma valise</string>
+    <string name="cards_diamonds_8">J\'ai déja</string>
+    <string name="cards_diamonds_9">Invente une règle</string>
+    <string name="cards_diamonds_10">Une suite</string>
+    <string name="cards_diamonds_jack">Tu est le roi des pouces</string>
+    <string name="cards_diamonds_queen">Les dames boivent</string>
+    <string name="cards_diamonds_king">Les hommes boivent</string>
+
+    <string name="card_hearts_ace">Distribues un cul sec</string>
+    <string name="card_hearts_2">Distribues 2 gorgées</string>
+    <string name="cards_hearts_3">Distribues 3 gorgées</string>
+    <string name="card_hearts_4">Distribues 4 gorgées</string>
+    <string name="cards_hearts_5">Distribues 5 gorgées</string>
+    <string name="cards_hearts_6">Distribues 6 gorgées</string>
+    <string name="cards_hearts_7">Dans ma valise</string>
+    <string name="cards_hearts_8">J\'ai déja</string>
+    <string name="cards_hearts_9">Invente une règle</string>
+    <string name="cards_hearts_10">Une suite</string>
+    <string name="cards_hearts_jack">Tu est le roi des pouces</string>
+    <string name="cards_hearts_queen">Les dames boivent</string>
+    <string name="cards_hearts_king">Les hommes boivent</string>
+
+    <string name="card_spades_ace">Bois un cul sec</string>
+    <string name="card_spades_2">Bois 2 gorgées</string>
+    <string name="cards_spades_3">Bois 3 gorgées</string>
+    <string name="card_spades_4">Bois 4 gorgées</string>
+    <string name="cards_spades_5">Bois 5 gorgées</string>
+    <string name="cards_spades_6">Bois 6 gorgées</string>
+    <string name="cards_spades_7">Dans ma valise</string>
+    <string name="cards_spades_8">J\'ai déja</string>
+    <string name="cards_spades_9">Invente une règle</string>
+    <string name="cards_spades_10">Une suite</string>
+    <string name="cards_spades_jack">Tu est le roi des pouces</string>
+    <string name="cards_spades_queen">Les dames boivent</string>
+    <string name="cards_spades_king">Les hommes boivent</string>
+
+    <string name="cards_joker">cul sec général</string>
+
+
+</resources>
