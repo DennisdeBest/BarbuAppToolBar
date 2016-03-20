@@ -1,11 +1,11 @@
 package com.debest.dennis.barbuapptoolbar;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,13 +21,16 @@ public class MainActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        //override font
+        TypeFaceUtil.overrideFont(this, "MONOSPACE", "fonts/custom_font.ttf");
         setContentView(R.layout.activity_main);
 
         //Set the toolbar title for the main menu
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.action_bar_title_menu);
+        if (toolbar != null) {
+            toolbar.setTitle(R.string.action_bar_title_menu);
+        }
         setSupportActionBar(toolbar);
-
     }
 
     @Override

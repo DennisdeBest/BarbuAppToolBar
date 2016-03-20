@@ -21,7 +21,7 @@
     <string name="cards_clubs_8">Rhymes</string>
     <string name="cards_clubs_9">Make a new rule</string>
     <string name="cards_clubs_10">Category</string>
-    <string name="cards_clubs_jack">Mate</string>
+    <string name="cards_clubs_jack">Mate - assign someone to drink with you</string>
     <string name="cards_clubs_queen">Ladies drink</string>
     <string name="cards_clubs_king">Guys drink</string>
 
@@ -35,7 +35,7 @@
     <string name="cards_diamonds_8">Rhymes</string>
     <string name="cards_diamonds_9">Make a new rule</string>
     <string name="cards_diamonds_10">Category</string>
-    <string name="cards_diamonds_jack">Mate</string>
+    <string name="cards_diamonds_jack">Mate - assign someone to drink with you</string>
     <string name="cards_diamonds_queen">Ladies drink</string>
     <string name="cards_diamonds_king">Guys drink</string>
 
@@ -49,7 +49,7 @@
     <string name="cards_hearts_8">Rhymes</string>
     <string name="cards_hearts_9">Make a new rule</string>
     <string name="cards_hearts_10">Category</string>
-    <string name="cards_hearts_jack">Mate</string>
+    <string name="cards_hearts_jack">Mate - assign someone to drink with you</string>
     <string name="cards_hearts_queen">Ladies drink</string>
     <string name="cards_hearts_king">Guys drink</string>
 
@@ -63,10 +63,11 @@
     <string name="cards_spades_8">Rhymes</string>
     <string name="cards_spades_9">Make a new rule</string>
     <string name="cards_spades_10">Category</string>
-    <string name="cards_spades_jack">Mate</string>
+    <string name="cards_spades_jack">Mate - assign someone to drink with you</string>
     <string name="cards_spades_queen">Ladies drink</string>
     <string name="cards_spades_king">Guys drink</string>
 
     <string name="cards_joker">Waterfall - everyone drinks</string>
+    <string name="logo">Logo</string>
 
 </resources>

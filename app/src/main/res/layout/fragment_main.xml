@@ -28,10 +28,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
-            android:src="@drawable/ic_launcher_big" />
+            android:src="@drawable/ic_launcher_big"
+            android:contentDescription="@string/logo" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_play"
             android:id="@+id/button_play"
@@ -59,10 +60,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView2"
-            android:src="@drawable/ic_launcher_big" />
+            android:src="@drawable/ic_launcher_big"
+            android:contentDescription="@string/logo"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_rules"
             android:id="@+id/button_rules"
@@ -91,10 +93,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView3"
-            android:src="@drawable/ic_launcher_big" />
+            android:src="@drawable/ic_launcher_big"
+            android:contentDescription="@string/logo" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_quit"
             android:id="@+id/button_quit"
