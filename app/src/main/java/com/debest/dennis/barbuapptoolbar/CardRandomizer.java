@@ -47,64 +47,66 @@ public class CardRandomizer {
     public ArrayList<String> getRules(Context context){
         ArrayList<String> rulesArray = new ArrayList<>();
         //Clubs
-        rulesArray.add("Bois un cul sec"); //Ace
-        rulesArray.add("Bois 2 gorgées"); // 2
-        rulesArray.add("Bois 3 gorgées"); // 3
-        rulesArray.add("Bois 4 gorgées"); // 4
-        rulesArray.add("Bois 5 gorgées"); // 5
-        rulesArray.add("Bois 6 gorgées"); // 6
-        rulesArray.add("Dans ma valise"); // 7
-        rulesArray.add("J'ai déja"); // 8
-        rulesArray.add("Invente une règle"); //9
-        rulesArray.add("Une suite"); //10
-        rulesArray.add("Tu est le roi des pouces"); //jack
-        rulesArray.add("Les dames boivent"); // queen
-        rulesArray.add("Les hommes boivent"); //king
+        rulesArray.add(context.getString(R.string.card_clubs_ace)); //Ace
+        rulesArray.add(context.getString(R.string.card_clubs_2)); // 2
+        rulesArray.add(context.getString(R.string.cards_clubs_3)); // 3
+        rulesArray.add(context.getString(R.string.card_clubs_4)); // 4
+        rulesArray.add(context.getString(R.string.cards_clubs_5)); // 5
+        rulesArray.add(context.getString(R.string.cards_clubs_6)); // 6
+        rulesArray.add(context.getString(R.string.cards_clubs_7)); // 7
+        rulesArray.add(context.getString(R.string.cards_clubs_8)); // 8
+        rulesArray.add(context.getString(R.string.cards_clubs_9)); //9
+        rulesArray.add(context.getString(R.string.cards_clubs_10)); //10
+        rulesArray.add(context.getString(R.string.cards_clubs_jack)); //jack
+        rulesArray.add(context.getString(R.string.cards_clubs_queen)); // queen
+        rulesArray.add(context.getString(R.string.cards_clubs_king)); //king
 
         //Diamonds
-        rulesArray.add("Distribues un cul sec"); //Ace
-        rulesArray.add("Distribues 2 gorgées"); // 2
-        rulesArray.add("Distribues 3 gorgées"); // 3
-        rulesArray.add("Distribues 4 gorgées"); // 4
-        rulesArray.add("Distribues 5 gorgées"); // 5
-        rulesArray.add("Distribues 6 gorgées"); // 6
-        rulesArray.add("Dans ma valise"); // 7
-        rulesArray.add("Je n'ai jamais"); // 8
-        rulesArray.add("Invente une règle"); //9
-        rulesArray.add("Une suite"); //10
-        rulesArray.add("Tu est le roi des pouces"); //jack
-        rulesArray.add("Les dames boivent"); // queen
-        rulesArray.add("Les hommes boivent"); //king
+        rulesArray.add(context.getString(R.string.card_diamonds_ace)); //Ace
+        rulesArray.add(context.getString(R.string.card_diamonds_2)); // 2
+        rulesArray.add(context.getString(R.string.cards_diamonds_3)); // 3
+        rulesArray.add(context.getString(R.string.card_diamonds_4)); // 4
+        rulesArray.add(context.getString(R.string.cards_diamonds_5)); // 5
+        rulesArray.add(context.getString(R.string.cards_diamonds_6)); // 6
+        rulesArray.add(context.getString(R.string.cards_diamonds_7)); // 7
+        rulesArray.add(context.getString(R.string.cards_diamonds_8)); // 8
+        rulesArray.add(context.getString(R.string.cards_diamonds_9)); //9
+        rulesArray.add(context.getString(R.string.cards_diamonds_10)); //10
+        rulesArray.add(context.getString(R.string.cards_diamonds_jack)); //jack
+        rulesArray.add(context.getString(R.string.cards_diamonds_queen)); // queen
+        rulesArray.add(context.getString(R.string.cards_diamonds_king)); //king
+
         //Hearts
-        rulesArray.add("Distribues un cul sec"); //Ace
-        rulesArray.add("Distribues 2 gorgées"); // 2
-        rulesArray.add("Distribues 3 gorgées"); // 3
-        rulesArray.add("Distribues 4 gorgées"); // 4
-        rulesArray.add("Distribues 5 gorgées"); // 5
-        rulesArray.add("Distribues 6 gorgées"); // 6
-        rulesArray.add("Dans ma valise"); // 7
-        rulesArray.add("Je n'ai jamais"); // 8
-        rulesArray.add("Invente une règle"); //9
-        rulesArray.add("Une suite"); //10
-        rulesArray.add("Tu est le roi des pouces"); //jack
-        rulesArray.add("Les dames boivent"); // queen
-        rulesArray.add("Les hommes boivent"); //king
+        rulesArray.add(context.getString(R.string.card_hearts_ace)); //Ace
+        rulesArray.add(context.getString(R.string.card_hearts_2)); // 2
+        rulesArray.add(context.getString(R.string.cards_hearts_3)); // 3
+        rulesArray.add(context.getString(R.string.card_hearts_4)); // 4
+        rulesArray.add(context.getString(R.string.cards_hearts_5)); // 5
+        rulesArray.add(context.getString(R.string.cards_hearts_6)); // 6
+        rulesArray.add(context.getString(R.string.cards_hearts_7)); // 7
+        rulesArray.add(context.getString(R.string.cards_hearts_8)); // 8
+        rulesArray.add(context.getString(R.string.cards_hearts_9)); //9
+        rulesArray.add(context.getString(R.string.cards_hearts_10)); //10
+        rulesArray.add(context.getString(R.string.cards_hearts_jack)); //jack
+        rulesArray.add(context.getString(R.string.cards_hearts_queen)); // queen
+        rulesArray.add(context.getString(R.string.cards_hearts_king)); //king
+
         //Spades
-        rulesArray.add("Bois un cul sec"); //Ace
-        rulesArray.add("Bois 2 gorgées"); // 2
-        rulesArray.add("Bois 3 gorgées"); // 3
-        rulesArray.add("Bois 4 gorgées"); // 4
-        rulesArray.add("Bois 5 gorgées"); // 5
-        rulesArray.add("Bois 6 gorgées"); // 6
-        rulesArray.add("Dans ma valise"); // 7
-        rulesArray.add("J'ai déja"); // 8
-        rulesArray.add("Invente une règle"); //9
-        rulesArray.add("Une suite"); //10
-        rulesArray.add("Tu est le roi des pouces"); //jack
-        rulesArray.add("Les dames boivent"); // queen
-        rulesArray.add("Les hommes boivent"); //king
+        rulesArray.add(context.getString(R.string.card_spades_ace)); //Ace
+        rulesArray.add(context.getString(R.string.card_spades_2)); // 2
+        rulesArray.add(context.getString(R.string.cards_spades_3)); // 3
+        rulesArray.add(context.getString(R.string.card_spades_4)); // 4
+        rulesArray.add(context.getString(R.string.cards_spades_5)); // 5
+        rulesArray.add(context.getString(R.string.cards_spades_6)); // 6
+        rulesArray.add(context.getString(R.string.cards_spades_7)); // 7
+        rulesArray.add(context.getString(R.string.cards_spades_8)); // 8
+        rulesArray.add(context.getString(R.string.cards_spades_9)); //9
+        rulesArray.add(context.getString(R.string.cards_spades_10)); //10
+        rulesArray.add(context.getString(R.string.cards_spades_jack)); //jack
+        rulesArray.add(context.getString(R.string.cards_spades_queen)); // queen
+        rulesArray.add(context.getString(R.string.cards_spades_king)); //king
         //Joker
-        rulesArray.add("cul sec général");
+        rulesArray.add(context.getString(R.string.cards_joker));
 
     return rulesArray;
     }

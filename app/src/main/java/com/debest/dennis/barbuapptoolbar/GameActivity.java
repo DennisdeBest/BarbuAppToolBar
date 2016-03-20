@@ -59,7 +59,7 @@ public class GameActivity extends AppCompatActivity {
                 public void onClick(View v) {
 
                     //set textview
-                    Counter.setText("Nouvelle Partie");
+                    Counter.setText(R.string.new_game);
 
                     //Set a new random
                     Random rand = new Random();
@@ -79,7 +79,7 @@ public class GameActivity extends AppCompatActivity {
                         rule = ruleList.get(r);
                         cardList.remove(r);
                         ruleList.remove(r);
-                        Counter.setText("Cartes restantes : " + Integer.toString(cardList.size()));
+                        Counter.setText(getString(R.string.cards_left) + Integer.toString(cardList.size()));
                         RuleTextView.setText(rule);
                     }
 
