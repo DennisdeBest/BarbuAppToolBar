@@ -10,6 +10,7 @@
     <string name="cards_left">"Cartes restantes : "</string>
     <string name="new_game">Nouvelle Partie</string>
     <string name="button_quit">Quitter</string>
+    <string name="logo">Logo</string>
 
     <string name="card_clubs_ace">Bois un cul sec</string>
     <string name="card_clubs_2">Bois 2 gorgées</string>
